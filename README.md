@@ -11,5 +11,5 @@
   2. 设计特征模版template文件
   3. 利用crf++对训练集train.txt训练得到模型model：crf_learn -f 4 -p 8 -c 3 template ./train.txt model
   4. 利用crf++利用模型model对测试集test.txt进行预测得到test.rst：crf_test -m model ./test.txt > ./test.rst，
-      text.rst文件中包含三列数据，第一列是字，第二列是标签，第三列是模型model对第一列字做出的预测
+      text.rst文件中包含三列数据，第一列是字，第二列是标签，第三列是模型model对第一列字做出的预测，利用test.rst文件即可得出正确率、召回率及F
 
